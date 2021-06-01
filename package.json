@@ -1,6 +1,6 @@
 {
 	"name": "stadoc",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"author": "raravel",
 	"license": "MIT",
 	"scripts": {
@@ -12,7 +12,18 @@
 		"stadoc": "./dist/cli.js"
 	},
 	"main": "./dist/index.js",
-	"keywords": [ "static", "web", "server", "site", "page", "html", "website", "hexo", "jekyll", "hugo" ],
+	"keywords": [
+		"static",
+		"web",
+		"server",
+		"site",
+		"page",
+		"html",
+		"website",
+		"hexo",
+		"jekyll",
+		"hugo"
+	],
 	"devDependencies": {
 		"@types/node": "^14.0.13",
 		"nodemon": "^2.0.4",
