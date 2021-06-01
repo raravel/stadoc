@@ -13,7 +13,7 @@ const date = () => {
 	const hour = d.getHours().toString().padStart(2, '0');
 	const minute = d.getMinutes().toString().padStart(2, '0');
 	const seconds = d.getSeconds().toString().padStart(2, '0');
-	const ms = d.getMilliseconds().toString().padStart(2, '0');
+	const ms = d.getMilliseconds().toString().padStart(3, '0');
 
 	return `${year}/${month}/${day} ${hour}:${minute}:${seconds}.${ms}`;
 };
