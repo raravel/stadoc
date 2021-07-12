@@ -20,7 +20,7 @@ const date = () => {
 
 export default (folder: string, port: number = 8080) => {
 	const server = http.createServer((req, res) => {
-		let p = path.join(folder, qs.unescape(req.url as any));
+		let p = path.join(folder, qs.unescape(req.url?.split('?')[0] as any));
 
 		if ( fs.existsSync(p) ) {
 			const stat = fs.lstatSync(p);
