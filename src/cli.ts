@@ -14,7 +14,7 @@ const printHelp = (str: string) => {
 	console.error(`Usage: ${process.argv[1]} [options] <static dir>`);
 	console.error('');
 	console.error('Options:');
-	console.error('    -p --port          Http server port');
+	console.error('    --port          Http server port');
 	process.exit(1);
 };
 
@@ -39,7 +39,6 @@ const parsingArgv = (argv: string[]) => {
 				// -[options]
 				for (let idx = 1;idx < len;idx++) {
 					switch ( argv[i][idx] ) {
-						case 'p': options.port = parseInt(argv[++i], 10); break;
 						default: printHelp('Invalid Options');
 					}
 				}
